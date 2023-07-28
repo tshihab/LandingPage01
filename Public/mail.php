@@ -8,12 +8,6 @@ $email = $_POST['email'];
 if(isset( $_POST['message']))
 $email = $_POST['message'];
 
-// if(isset( $_POST['newsletter']))
-// $email = $_POST['newsletter'];
-
-// if(isset( $_POST['contact-pref']))
-// $email = $_POST['contact-pref'];
-
 
 
 $content="From: $name";
