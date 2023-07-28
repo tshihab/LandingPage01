@@ -1,0 +1,653 @@
+/* default values */
+html {
+    height: 100%;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+}
+
+body {
+    background-color: #2F2629;
+}
+
+#particles-js {
+    height: 97%;
+    width: 99%;
+    margin: auto auto;
+    position: absolute;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 2.25rem;
+    color: rgb(0, 0, 0);
+}
+
+h2 {
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    /* color:  rgb(109, 70, 180); */
+}
+
+h3 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+i {
+    font-size: 1.5rem;
+    color: rgb(172, 170, 170);
+    transition: transform 0.5s;
+}
+
+a {
+    text-decoration: none;
+}
+
+article{
+    font-size: 1.25rem;
+}
+
+.content-height {
+    height: 600px;
+    box-sizing: border-box;
+    padding: 20px;
+    align-items: center;
+}
+
+
+/* ==================== Display Setup ===================== */
+
+.my-container {
+    width: 80%;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-body {
+    background-color: #2F2629;
+    height: 600px;
+    width: 92%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 25px;;
+}
+
+
+/* ==================== Profile Setup ===================== */
+
+.profile-card {
+    height: 100%;
+    width: 30%;
+    background-color: #4e4245;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -5px 0 10px black;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.img-box {
+    height: 200px;
+    width: 200px;
+    margin: 70px auto 0 auto;
+    border-radius: 100px;
+    overflow: hidden;
+
+}
+
+.img-box img {
+    height: auto;
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.img-box:hover img{
+    transform: scale(1.1);
+}
+
+
+.bio {
+    margin-top: -10px;
+}
+
+.bio h1 {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 5px;
+}
+
+.bio p {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.social-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.fb-icon, .link-icon, .github-icon {
+    font-size: 1.75rem;
+    color: rgb(172, 170, 170);
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.fb-icon:hover {
+    color: royalblue;
+    transition-duration: 0.5s;
+    transform: scale(1.25);
+}
+
+.link-icon:hover {
+    color: cornflowerblue;
+    transition-duration: 0.5s;
+    transform: scale(1.25);
+}
+
+.github-icon:hover {
+    color: rgb(0, 0, 0);
+    transition-duration: 0.5s;
+    transform: scale(1.25);
+}
+
+ul {
+    padding: 10px 25px;
+    color: rgb(148, 145, 145);
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    color: rgb(148, 145, 145);
+    font-size: 0.75rem;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+ul li:hover {
+    color: rgb(218, 218, 218);
+    transition-duration: 0.2s;
+}
+
+
+/* =================== Web Body Setup ===================== */
+
+.my-section {
+    height: 100%;
+    width: 70%;
+    background-color: white;
+    border-radius: 20px;
+
+    text-align: left;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(223, 223, 223);
+    /* overflow: hidden; */
+}
+
+.content {
+    /* background-color: green; */
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    display: grid;
+    direction: row;
+}
+
+.content::-webkit-scrollbar {
+    display: none;
+}
+
+.landing {
+    box-sizing: border-box;
+    padding: 210px 0 200px 80px;
+}
+
+.landing h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.landing span {
+    color: rgb(33, 150, 204);
+    font-size: 2.25rem;
+}
+
+/* =================== About Me ===================== */
+
+.about-section article {
+    box-sizing: border-box;
+    padding: 0 20px 40px 20px;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    /* background-color: coral; */
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+    z-index: 1;
+}
+  
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+/* ================== Skill Section =================== */
+
+.skill-row {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.web-design, .web-dev {
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin-top: -10px;
+}
+
+.web-design p, .web-dev p {
+    margin-top: -10px;
+    margin-bottom: 60px;
+    line-height: 30px;
+    font-size: 1.1rem;
+}
+
+/* ================== Progress Bar =================== */
+
+.progress-section h4 {
+    /* color: rgb(33, 150, 204); */
+    color: #4E4245;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+
+.my-progress-bar {
+    /* background-color: rgba(115, 129, 136, 0.5); */
+    background-color: #4e424554;
+    width: 100%;
+    height: 15px;
+    border-radius: 20px;
+}
+
+.my-progress-bar div {
+    /* background-color: rgb(33, 150, 204); */
+    background-color: #4E4245;
+    width: 0%;
+    height: 15px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.my-progress-bar span {
+    font-size: 10px;
+    font-weight: bold;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    float: right;
+    margin-top: -7px;
+    margin-right: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #4E4245;
+    /* border: 1px solid rgb(33, 150, 204); */
+
+}
+
+.reveal_progress {
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 1s linear forwards;
+}
+  
+.reveal_progress.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+/* @keyframes for animation*/
+.active.photoshop {
+    animation: photo 1s linear forwards;
+}
+
+.active.HTML {
+    animation: html 1s linear forwards;
+}
+
+.active.bootstrap {
+    animation: boot 1s linear forwards;
+}
+
+.active.javascript {
+    animation: javascript 1s linear forwards;
+}
+
+.active.python {
+    animation: python 1s linear forwards;
+}
+
+.active.wordpress {
+    animation: wordpress 1s linear forwards;
+
+}
+
+@keyframes photo {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+        width: 75%;
+      }
+}
+
+@keyframes html {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+        width: 80%;
+      }
+}
+
+@keyframes boot {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+        width: 60%;
+      }
+}
+
+@keyframes javascript {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+        width: 65%;
+      }
+}
+
+@keyframes python {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+        width: 85%;
+      }
+}
+
+@keyframes wordpress {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+        width: 70%;
+      }
+}
+
+/* ================ Service Section Setup ================ */
+
+.card-wrapper {
+    padding: 0px 20px 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    place-items: center;
+
+}
+
+
+.card {
+    position: relative;
+    border-radius: 10px;
+    /* width: 220px; */
+    height: 140px;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 40px;
+
+    box-shadow: 1px 1px 2px #eb4f07;
+
+    -ms-transform: preserve-3d;
+    transform: preserve-3d;
+
+    perspective: 2000px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+  }
+  
+  .card-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: lightgray;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    transform-origin: 0;
+    box-shadow: 1px 1px 2px #eb4f07;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .card:hover .card-cover {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotatey(-80deg);
+    -ms-transform: rotatey(-80deg);
+    transform: rotatey(-80deg);
+  }
+  
+.card p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+
+.card-cover i {
+    font-size: 3rem;
+    margin-top: 15px;
+    color: #4E4245;
+}
+
+.card-cover h3 {
+    margin-top: 10px;
+
+}
+
+/* ================ Service Section Setup ================ */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    /* place-items: center; */
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 10px 15px;
+    caret-color: deeppink;
+    box-sizing: border-box;
+    outline: none;
+    border: 3px solid rgba(143, 142, 142, 0.589);
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    border: 3px solid #492a3296;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    box-sizing: border-box;
+}
+
+input[type=text], input[type=email] {
+    flex: 50%;
+
+}
+
+.submit-btn {
+    width: 100px;
+    cursor: pointer;
+    background-color: #69585c;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    letter-spacing: 0.05rem;
+}
+
+.submit-btn:hover {
+    background-color: #2F2629;
+    transition-duration: 0.5s;
+}
+
+
+/* ================== Navigation Setup =================== */
+
+.my-menu {
+    background-color: white;
+    height: 50%;
+    width: 5%;
+    border-radius: 25px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.my-menu a {
+    position: relative;
+    display: inline-block;
+}
+
+.my-menu a .tooltip {
+    top: -5px;
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    color: #755f66;
+    padding: 10px 10px;
+    border-radius: 0 25px 25px 0;
+    position: absolute;
+    text-align: right;
+    visibility: hidden;
+    margin-left: 15px;
+    z-index: -1;
+    transform: translateX(-30%);
+}
+
+.my-menu a:hover .tooltip {
+    visibility: visible;
+    transition-duration: 0.5s;
+    transform: scale(1.2);
+}
+
+.my-menu i:hover {
+    color: #755f66;
+    transition-duration: 0.5s;
+    transform: scale(1.2);
+}
+
+/* ================ Terms of Services Page ================ */
+
+.terms-policy {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.terms-policy h1 {
+    text-align: center;
+}
+
+.terms-policy article {
+    font-size: 1.3rem;
+}
+
+ol {
+    padding-bottom: 50px;
+}
+
+ol > li > b {
+    font-size: 1.2rem;
+}
+
+ol > li > p {
+    font-size: 1.05rem;
+    font-weight: 300;
+}
+
+ol li ul {
+    margin-top: -10px;
+}
+
+ol li ul li {
+    color: rgb(148, 145, 145);
+    margin-top: 10px;
+}
+ol li ul li:hover {
+    color: rgb(148, 145, 145);
+}
+
+ol > li {
+    margin-top: 35px;
+}
