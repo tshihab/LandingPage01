@@ -17,7 +17,7 @@ $email = $_POST['message'];
 
 
 $content="From: $name";
-$recipient = "tushar.shihab13@gmail.com";
+$recipient = "xyz@pqr.com";
 $subject = "Message From Viewers";
 $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $content, $mailheader) or die("Error!");
