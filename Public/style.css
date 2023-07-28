@@ -463,7 +463,7 @@ ul li:hover {
     align-items: center;
     justify-content: center;
     color: #000;
-  }
+}
   
   .card-cover {
     position: absolute;
@@ -482,7 +482,7 @@ ul li:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-  }
+}
   
   .card:hover .card-cover {
     -webkit-transition: all 0.5s;
@@ -490,12 +490,12 @@ ul li:hover {
     -webkit-transform: rotatey(-80deg);
     -ms-transform: rotatey(-80deg);
     transform: rotatey(-80deg);
-  }
+}
   
 .card p {
     font-size: 1rem;
     line-height: 1.25rem;
-  }
+}
 
 .card-cover i {
     font-size: 3rem;
